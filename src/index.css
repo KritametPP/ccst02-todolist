@@ -64,5 +64,15 @@ label, input {
 .form-add-todo {
   display: flex;
   gap: 2px;
-  padding-bottom: 8px;
+  padding-bottom: 12px;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.todo-item {
+  display: flex;
 }

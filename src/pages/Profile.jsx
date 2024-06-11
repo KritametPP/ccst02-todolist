@@ -1,8 +1,13 @@
 import React from 'react'
+import useAuth from "../hooks/useAuth";
 
 function Profile() {
+  const {user} = useAuth()
   return (
-    <div>Profile</div>
+    <div>
+      <h1>Profile</h1>
+      <p>{JSON.stringify(user)}</p>
+    </div>
   )
 }
 

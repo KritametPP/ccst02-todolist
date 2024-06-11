@@ -1,8 +1,12 @@
 import React from 'react'
 
-function TodoItem() {
+function TodoItem({job}) {
   return (
-    <div>TodoItem</div>
+    <div className="todo-item">
+      <input type="text" disabled value={job.todo}/>
+      <button>Edit</button>
+      <button>Delete</button>
+    </div>
   )
 }
 
