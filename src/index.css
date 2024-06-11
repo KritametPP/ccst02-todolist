@@ -76,3 +76,7 @@ label, input {
 .todo-item {
   display: flex;
 }
+
+button {
+  cursor: pointer;
+}

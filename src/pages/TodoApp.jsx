@@ -21,7 +21,7 @@ function TodoApp() {
       <div className="todoapp">
         <Dashboard amount={jobs.length} />
         <FormAddTodo reload={reload} />
-        <TodoContainer jobs={jobs} />
+        <TodoContainer jobs={jobs} reload={reload} />
 
       </div>
     </>

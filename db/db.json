@@ -61,18 +61,6 @@
       "todo": "Learn HTML",
       "completed": false,
       "userId": "54cf"
-    },
-    {
-      "id": "31bc",
-      "todo": "Learn CSS",
-      "completed": false,
-      "userId": "54cf"
-    },
-    {
-      "id": "e64f",
-      "todo": "Learn JS",
-      "completed": false,
-      "userId": "54cf"
     }
   ]
 }
