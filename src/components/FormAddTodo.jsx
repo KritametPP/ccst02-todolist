@@ -2,7 +2,10 @@ import React from 'react'
 
 function FormAddTodo() {
   return (
-    <div>FormAddTodo</div>
+    <form className='form-add-todo'>
+      <input type="text" />
+      <button>Add</button>
+    </form>
   )
 }
 

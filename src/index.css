@@ -61,3 +61,8 @@ label, input {
   border-bottom: 1px solid #eee;
   padding-bottom: 8px;
 }
+.form-add-todo {
+  display: flex;
+  gap: 2px;
+  padding-bottom: 8px;
+}
