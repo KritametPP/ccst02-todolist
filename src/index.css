@@ -7,4 +7,33 @@
 
 body {
   font-family: "Prompt", sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+  border: 1px solid #ddd;
+}
+
+header {
+  padding: 8px;
+  background-color: aquamarine;
+}
+
+header nav {
+  display: flex;
+  gap: 16px;
+}
+
+.register-form, .login-form {
+  width: 600px;
+  padding: 16px;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: auto;
+}
+
+label, input {
+  width: 100%;
+  font-size: 20px;
 }
