@@ -17,6 +17,12 @@
       "name": "candy",
       "password": "c1234",
       "email": "candy@cc"
+    },
+    {
+      "id": "2aa8",
+      "name": "danny",
+      "password": "d1234",
+      "email": "danny@ddd"
     }
   ],
   "jobs": [
