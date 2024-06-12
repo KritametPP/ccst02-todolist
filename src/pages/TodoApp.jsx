@@ -3,10 +3,12 @@ import Dashboard from "../components/Dashboard";
 import FormAddTodo from "../components/FormAddTodo";
 import TodoContainer from "../components/TodoContainer";
 import useFetch from '../hooks/useFetch'
+import useAuth from '../hooks/useAuth';
 
 
 function TodoApp() {
-  const [jobs, error, loading, reload] = useFetch(`http://localhost:8000/jobs`)
+  const {user} = useAuth()
+  const [jobs, error, loading, reload] = useFetch(`http://localhost:8000/jobs?userId=${user.id}`)
 
   if (loading) {
     return <h1>Loading...</h1>
