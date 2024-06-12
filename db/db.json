@@ -29,19 +29,19 @@
     {
       "id": "1",
       "todo": "Do something nice for someone",
-      "completed": false,
+      "completed": true,
       "userId": "54cf"
     },
     {
       "id": "2",
       "todo": "Memorize the fifty states and their capitals",
-      "completed": false,
+      "completed": true,
       "userId": "dc4a"
     },
     {
       "id": "3",
       "todo": "Watch a classic movie",
-      "completed": false,
+      "completed": true,
       "userId": "6a50"
     },
     {
@@ -59,12 +59,6 @@
     {
       "id": "6",
       "todo": "Learn HTML",
-      "completed": false,
-      "userId": "54cf"
-    },
-    {
-      "id": "cf80",
-      "todo": "aaa",
       "completed": false,
       "userId": "54cf"
     }

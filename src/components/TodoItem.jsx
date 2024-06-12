@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 function TodoItem({ job, reload, editId, setEditId }) {
 
   const [inputTitle, setInputTitle] = useState(job.todo)
+  const [jobDone, setJobDone] = useState(job.completed)
 
   const hdlDelete = async () => {
     if (!confirm('Confirm to delete ?')) {
@@ -18,7 +19,7 @@ function TodoItem({ job, reload, editId, setEditId }) {
   }
 
   const hdlUpdate = async () => {
-    const body = { ...job, todo: inputTitle }
+    const body = { ...job, todo: inputTitle, completed: jobDone }
     try {
       await axios.put(`http://localhost:8000/jobs/${job.id}`, body)
       reload()
@@ -36,6 +37,7 @@ function TodoItem({ job, reload, editId, setEditId }) {
     <div className="todo-item">
       {job.id === editId ? (
         <>
+          <input type="checkbox" checked={jobDone} onChange={e => setJobDone(e.target.checked)} />
           <input
             type="text"
             value={inputTitle}
@@ -46,7 +48,8 @@ function TodoItem({ job, reload, editId, setEditId }) {
         </>
       ) : (
         <>
-          <input type="text" disabled value={job.todo} />
+          <input type="text" disabled value={job.todo} 
+            style={{color: job.completed ? 'green' : ''}}/>
           <button onClick={() => setEditId(job.id)}>Edit</button>
           <button onClick={hdlDelete}>Delete</button>
         </>

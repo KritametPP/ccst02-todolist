@@ -5,7 +5,11 @@
   box-sizing: border-box;
 }
 
-h1,h2,h3,h4,p {
+h1,
+h2,
+h3,
+h4,
+p {
   padding: 0;
   margin: 0;
 }
@@ -32,7 +36,8 @@ header nav {
   gap: 16px;
 }
 
-.register-form, .login-form {
+.register-form,
+.login-form {
   width: 600px;
   padding: 16px;
   border: 1px solid #ddd;
@@ -42,7 +47,8 @@ header nav {
   margin: auto;
 }
 
-label, input {
+label,
+input {
   width: 100%;
   font-size: 20px;
 }
@@ -61,6 +67,7 @@ label, input {
   border-bottom: 1px solid #eee;
   padding-bottom: 8px;
 }
+
 .form-add-todo {
   display: flex;
   gap: 2px;
@@ -79,4 +86,8 @@ label, input {
 
 button {
   cursor: pointer;
+}
+
+.todo-item>[type=checkbox] {
+  width: auto;
 }
